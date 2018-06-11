@@ -1,0 +1,13 @@
+.submit {
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    background-color: #008CBA;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
