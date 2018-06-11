@@ -13,10 +13,10 @@ class App extends Component {
   handleSubmit = (location) => {
     let api;
     if(location.lat != undefined){
-      api = "http://api.openweathermap.org/data/2.5/forecast?lat="+location.lat+"&lon="+location.long+"&appid=85f31f2f896a01a30807098b4ad53ca6";
+      api = "https://api.openweathermap.org/data/2.5/forecast?lat="+location.lat+"&lon="+location.long+"&appid=85f31f2f896a01a30807098b4ad53ca6";
     }
     else{
-      api = "http://api.openweathermap.org/data/2.5/forecast?q="+location.city+","+location.country+"&appid=85f31f2f896a01a30807098b4ad53ca6";
+      api = "https://api.openweathermap.org/data/2.5/forecast?q="+location.city+","+location.country+"&appid=85f31f2f896a01a30807098b4ad53ca6";
     }
 
     fetch(api)
