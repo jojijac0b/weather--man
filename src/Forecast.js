@@ -13,9 +13,17 @@ class Forecast extends Component {
         </div>
     ));
 
-    return (
-      <div className='wrapper'>{forecast}</div>
-    );
+    if(forecast.length > 0){
+      return (
+        <div>
+          <div>Click day for hourly forecast</div>
+          <div className='wrapper'>{forecast}</div>
+        </div>
+      );
+    }
+    else {
+      return (<div></div>)
+    }
   }
 }
 
